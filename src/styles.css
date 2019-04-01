@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* body{
+    background-image: url('images/cricket1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 550px;
+} */
+.label{
+    float:left;
+}
+.loginbox{
+    /* width:30%; */
+    padding: 40px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    height:450px;
+}
