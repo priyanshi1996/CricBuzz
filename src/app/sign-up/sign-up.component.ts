@@ -17,7 +17,7 @@ export class SignUpComponent implements OnInit {
     this.signupForm = this.fb.group(
       {
         name:['',[Validators.required, Validators.minLength(3)]],
-        email:['',[Validators.required,Validators.maxLength(30)]],
+        email:['',[Validators.required,Validators.maxLength(30),Validators.email]],
         password:[''],
         confirmPassword:['']
       },{validator:PasswordValidator}
@@ -29,11 +29,11 @@ export class SignUpComponent implements OnInit {
   get email(){
     return this.signupForm.get('email');
   }
-  get password(){
-    return this.signupForm.get('password');
-  }
-  get confirmPassword(){
-    return this.signupForm.get('confirmPassword');
-  }
+  // get password(){
+  //   return this.signupForm.get('password');
+  // }
+  // get confirmPassword(){
+  //   return this.signupForm.get('confirmPassword');
+  // }
 
 }
